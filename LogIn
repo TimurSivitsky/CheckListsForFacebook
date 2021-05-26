@@ -1,31 +1,31 @@
 Every test should be understood as after every manipulation(check-item) with fields should click on button "Log IN"
 
 Positive-test: 
-    1. input correct Login and Password, which exist in data base
-    2. input not existing log and emails
+    1. input correct Login and Password, which exist in data base SMOKE
+    2. input not existing log and emails SMOKE
 Negative-tests
-    3. input short email with 1 symbol like a@mail.com, and not full number
-    4. input a lot of symbols in fields more than available (if have no limit, page can be lagging)
-      4.1 input min symbols
+    3. input short email with 1 symbol like a@mail.com, and not full number SMOKE
+    4. input a lot of symbols in fields more than available (if have no limit, page can be lagging)  CRITICAL PATH 
+      4.1 input min symbols EXTENDED
     5. input incorrect symbols for emails or telephone number
-      5.1 without @, without .com
-    6. input sql-request
-    7. input data json, xml
-    8. input email and password where they're match up
-    9. change fields in html in devtools on another
-    10. input special symbols
-    11. input free space before
-    12. input free space between symbols
-    13. input free space after
-    14. input math expressions
-    15. input null in fields
-    16. stay empty fields
-    17. check how to work TAB and Enter buttons on keybords
-    18. write different languages
+      5.1 without @, without .com CRITICAL PATH
+    6. input sql-request EXTENDED
+    7. input data json, xml EXTENDED
+    8. input email and password where they're match up  CRITICAL PATH 
+    9. change fields in html in devtools on another EXTENDED
+    10. input special symbols SMOKE
+    11. input free space before CRITICAL PATH
+    12. input free space between symbols CRITICAL PATH 
+    13. input free space after CRITICAL PATH 
+    14. input math expressions EXTENDED
+    15. input null in fields EXTENDED
+    16. stay empty fields  CRITICAL PATH 
+    17. check how to work TAB and Enter buttons on keybords EXTENDED 
+    18. write in different languages EXTENDED
     -------------------------------------
     tests for checking requirments for sizes of fields
-    19. checks that form is matched up with requirments or mockups
-    20. check styles in different browsers
-    21. input many times correct data in fields many times automation test from different ip (proxy)
-    22. input incorrect password many times more than 5 times in a row
-    23 the same that 22 but use different location(proxy, fakelocation)
+    19. checks that form is matched up with requirments or mockups SMOKE
+    20. check styles in different browsers SMOKE
+    21. input many times correct data in fields many times automation test from different ip (proxy) SMOKE
+    22. input incorrect password many times more than 5 times in a row EXTENDED
+    23 the same that 22 item but use different location(proxy, fakelocation) EXTENDED
